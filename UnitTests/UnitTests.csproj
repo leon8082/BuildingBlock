@@ -52,6 +52,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SQLiteOperator\SQLiteOperator.csproj">
+      <Project>{9b099cbe-da8f-4b6a-a37d-3c4fa359bf4d}</Project>
+      <Name>SQLiteOperator</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

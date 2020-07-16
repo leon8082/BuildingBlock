@@ -43,119 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuffEventArgs.cs" />
-    <Compile Include="CatchingProcessor.cs" />
-    <Compile Include="CheckResult\CheckResultArgs.cs" />
-    <Compile Include="CheckResult\CheckResultCollector.cs" />
-    <Compile Include="CheckSum\CRC32.cs" />
-    <Compile Include="CheckSum\ICheckSum.cs" />
-    <Compile Include="Common.cs" />
-    <Compile Include="CommonHandler\CheckDesingModel.cs" />
-    <Compile Include="CommonHandler\CopyToObject.cs" />
-    <Compile Include="CommonHandler\Md5Helper.cs" />
-    <Compile Include="CommonHandler\UILanguage.cs" />
-    <Compile Include="CommonInterface\IDistributedItem.cs" />
-    <Compile Include="CommonInterface\DistributerType.cs" />
-    <Compile Include="CommonInterface\IGatherer.cs" />
-    <Compile Include="CommonInterface\IDistributer.cs" />
-    <Compile Include="CommonInterface\IInitializable.cs" />
-    <Compile Include="CommonInterface\IRecvAndSendData.cs" />
-    <Compile Include="CommonInterface\IReplay.cs" />
-    <Compile Include="CommonInterface\ITransmittable.cs" />
-    <Compile Include="CommonInterface\MessageBase.cs" />
-    <Compile Include="CommonUtility\AppUtility.cs" />
-    <Compile Include="CommonUtility\CollectionUtility.cs" />
-    <Compile Include="CommonUtility\Constants.cs" />
-    <Compile Include="CommonUtility\DataTypeIdAttribute.cs" />
-    <Compile Include="CommonUtility\EnumUtility.cs" />
-    <Compile Include="CommonUtility\MemberDesAttribute.cs" />
-    <Compile Include="CommonUtility\MemoryUtility.cs" />
-    <Compile Include="CommonUtility\NetUtility.cs" />
-    <Compile Include="CommonUtility\StringUtility.cs" />
-    <Compile Include="CommonUtility\SystemUtility.cs" />
-    <Compile Include="CommonUtility\TimeUtility.cs" />
-    <Compile Include="EnumSpec\APMCBTCEnum.cs" />
-    <Compile Include="EnumSpec\CommonMenuItemType.cs" />
-    <Compile Include="EnumSpec\ControlMode.cs" />
-    <Compile Include="EnumSpec\DecelerationLevel.cs" />
-    <Compile Include="EnumSpec\AccelarationLevel.cs" />
-    <Compile Include="EnumSpec\AlarmType.cs" />
-    <Compile Include="EnumSpec\BerthAlignment.cs" />
-    <Compile Include="EnumSpec\CruiseSpeedLevel.cs" />
-    <Compile Include="EnumSpec\DestRunMode.cs" />
-    <Compile Include="EnumSpec\DeviceStates.cs" />
-    <Compile Include="EnumSpec\DeviceType.cs" />
-    <Compile Include="EnumSpec\DoorSide.cs" />
-    <Compile Include="EnumSpec\EntityConnectionState.cs" />
-    <Compile Include="EnumSpec\ESROnGround.cs" />
-    <Compile Include="EnumSpec\ESROnVehile.cs" />
-    <Compile Include="EnumSpec\GarageState.cs" />
-    <Compile Include="EnumSpec\LoopRoutingStoppingSide.cs" />
-    <Compile Include="EnumSpec\MeterType.cs" />
-    <Compile Include="EnumSpec\MovingDirection.cs" />
-    <Compile Include="EnumSpec\OperationDirection.cs" />
-    <Compile Include="EnumSpec\PdcuUnit.cs" />
-    <Compile Include="EnumSpec\PlanType.cs" />
-    <Compile Include="EnumSpec\ProjectTypeEnum.cs" />
-    <Compile Include="EnumSpec\ReverseModes.cs" />
-    <Compile Include="EnumSpec\RGrandRouteTypeEnum.cs" />
-    <Compile Include="EnumSpec\StationBlockCommandType.cs" />
-    <Compile Include="EnumSpec\StoppingSide.cs" />
-    <Compile Include="EnumSpec\StopPointDirection.cs" />
-    <Compile Include="EnumSpec\StopPointType.cs" />
-    <Compile Include="EnumSpec\TrainDetectionTech.cs" />
-    <Compile Include="EnumSpec\TrainDoorState.cs" />
-    <Compile Include="EnumSpec\TrainDriverMode.cs" />
-    <Compile Include="EnumSpec\TrainLoadLevel.cs" />
-    <Compile Include="EnumSpec\TrainReportTypes.cs" />
-    <Compile Include="EnumSpec\TrainRunGrade.cs" />
-    <Compile Include="EnumSpec\TrainRunState.cs" />
-    <Compile Include="EnumSpec\TrainServerType.cs" />
-    <Compile Include="EnumSpec\TrainStoppingState.cs" />
-    <Compile Include="EnumSpec\TrainTraceMode.cs" />
-    <Compile Include="EnumSpec\TSLValue.cs" />
-    <Compile Include="EnumSpec\TurnBackEnum.cs" />
-    <Compile Include="EnumSpec\UILanguageEnum.cs" />
-    <Compile Include="EnumSpec\UnwrapStatus.cs" />
-    <Compile Include="FundamentalConfig\DataFolderManagement.cs" />
-    <Compile Include="FundamentalConfig\LineCfg.cs" />
-    <Compile Include="FundamentalConfig\LineFolderManagement.cs" />
-    <Compile Include="FundamentalConfig\Loop.cs" />
-    <Compile Include="IO\IniFile.cs" />
-    <Compile Include="ListSortOrde.cs" />
-    <Compile Include="MutexList.cs" />
+    <Compile Include="Interfaces\IInitializable.cs" />
+    <Compile Include="Interfaces\IRecvAndSendData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Serializable\CRCCheck.cs" />
-    <Compile Include="Serializable\Deserializer.cs" />
-    <Compile Include="Serializable\Endianness.cs" />
-    <Compile Include="Serializable\Serializer.cs" />
-    <Compile Include="Skeleton\Communication\TransmitterBase.cs" />
     <Compile Include="Skeleton\InitializeOnlyOnce.cs" />
-    <Compile Include="Time\PastTimeCounter.cs" />
-    <Compile Include="Time\RelativeDateTime.cs" />
-    <Compile Include="Time\TimeCounter.cs" />
-    <Compile Include="Win32API\COPYDATASTRUCT.cs" />
-    <Compile Include="Win32API\Kernel32.cs" />
-    <Compile Include="Win32API\Ole32.cs" />
-    <Compile Include="Win32API\SystemTime.cs" />
-    <Compile Include="Win32API\User32.cs" />
-    <Compile Include="Win32API\WinError.cs" />
-    <Compile Include="XmlCfg\ConfigurationNode.cs" />
-    <Compile Include="XmlCfg\ConfigurationPath.cs" />
-    <Compile Include="XmlCfg\CustomTypeConverter.cs" />
-    <Compile Include="XmlCfg\TreeConfiguration.cs">
-      <DependentUpon>TreeConfiguration.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="XmlCfg\XmlConfiguration.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CommonArgs\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="XmlCfg\TreeConfiguration.xsd">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
