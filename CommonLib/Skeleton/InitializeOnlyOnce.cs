@@ -3,7 +3,7 @@
 namespace CommonLib.Skeleton
 {
     /// <summary>
-    /// 只可以初始化一次的类型
+    /// 代表只可以初始化一次的类型
     /// </summary>
     public abstract class InitializeOnlyOnce : IInitializable
     {
